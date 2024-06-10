@@ -34,5 +34,14 @@ public class Main {
             String mensagem = fimDeSemana ? "é fim de semana" : "não é fim de semana"; //se a variavel tiver valor verdadeiro, um texto sera atribuido, caso n, sera o outro texto
             System.out.println(mensagem + "testando");
             
+            int nota = 50;
+            //se a nota for maior doq ou igual a 70 entao ele esta aprovado
+            //usaremos if else, e else if
+            if(nota >= 70 ) {
+                System.out.println("lkuno aprovado");
+
+            } else {
+                System.out.println("aluno reprovado");
+            }
         }    
 }
