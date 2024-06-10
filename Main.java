@@ -7,7 +7,7 @@ public class Main {
             float num2 = 1.9f;
             double resultado = num1 + num2;
             System.out.println("ola " + nome + " voce tem " + num1 + " e eu tenho " + num2);
-            System.out.println("o resultado de sua soma é " + resultado);
+            System.out.println("o resultado de sua soma é  " + resultado);
 
             int a = 1;
             int b = 2;
@@ -19,7 +19,7 @@ public class Main {
             System.out.println(resultado2);
             
             boolean fimDeSemana = true; 
-            
+
 
             
         }    
