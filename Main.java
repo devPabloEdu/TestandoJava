@@ -14,6 +14,12 @@ public class Main {
             float divisao = (float) a/b;
             System.out.println(divisao);
             
+            //operadores lógicos
+            boolean resultado2 = false;
+            System.out.println(resultado2);
+            
+            boolean fimDeSemana = true; 
+            
 
             
         }    
