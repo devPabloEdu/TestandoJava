@@ -1,13 +1,20 @@
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        public static void main(String[] args) {
+            //write your code here
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
-    }
+            String nome = "pablo";
+            double num1 = 1.5;
+            float num2 = 1.9f;
+            double resultado = num1 + num2;
+            System.out.println("ola " + nome + " voce tem " + num1 + " e eu tenho " + num2);
+            System.out.println("o resultado de sua soma é " + resultado);
+
+            int a = 1;
+            int b = 2;
+            float divisao = (float) a/b;
+            System.out.println(divisao);
+            
+
+            
+        }    
 }
