@@ -32,7 +32,7 @@ public class Main {
             // a unica situação onde sera verdade ´q auando ambos os termos são verdade
 
             String mensagem = fimDeSemana ? "é fim de semana" : "não é fim de semana"; //se a variavel tiver valor verdadeiro, um texto sera atribuido, caso n, sera o outro texto
-            System.out.println(mensagem);
+            System.out.println(mensagem + "testando");
             
         }    
 }
