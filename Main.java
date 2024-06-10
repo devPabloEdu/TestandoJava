@@ -18,8 +18,15 @@ public class Main {
             boolean resultado2 = false;
             System.out.println(resultado2);
             
+            //aprendendo condicionais com teste de ir a praia com operadores lógicos
             boolean fimDeSemana = true; 
-
+            boolean fazendoSol = true;
+            boolean vamosAPraia = fimDeSemana  && fazendoSol;
+            System.out.println(vamosAPraia);
+            
+            //tabela verdade
+            // operadore && AND
+            // true && true
 
             
         }    
