@@ -1,6 +1,8 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.TextStyle;
 import java.util.Locale;
+import java.time.LocalDateTime;
 
 public class Main {
         public static void main(String[] args) {
@@ -56,9 +58,24 @@ public class Main {
             String nomeOutro = "Jessé";
             System.out.println(nome2.equalsIgnoreCase(nomeOutro));
 
+            String nome3 = "Pablo";
             //iso 
             LocalDate hoje = LocalDate.now();
             Locale brasil = new Locale("pt", "BR");
-            System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
+            //System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
+            String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
+            String saudacao = " ";
+            LocalDateTime agora = LocalDateTime.now();
+            //System.out.println("bom dia " + nome2 + " hoje é  " + diaSemana + " e são  " + agora.getHour());
+            if (agora.getHour() >= 0 && agora.getHour() < 12) {
+                saudacao = "bom dia";
+            } else if (agora.getHour() >= 12 && agora.getHour() <10){
+                saudacao = "boa tarde";
+            } else if (agora.getHour() >= 18 && agora.getHour() < 24) {
+                saudacao = "Boa noite";
+            }
+
+            System.out.printf("ola, %s. Hoje é %s, %s.%n", nome3, diaSemana, saudacao);
+
         }    
 }
