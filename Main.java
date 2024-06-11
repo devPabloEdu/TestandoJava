@@ -44,9 +44,12 @@ public class Main {
                 System.out.println("aluno reprovado");
             }
 
-            String nome2 = "jesé";
+            String nome2 = "jessé";
             System.out.println(nome2.toUpperCase());
             System.out.println(nome2.toLowerCase());
             System.out.println(nome2.length());
+
+            String nomeOutro = "Jessé";
+            System.out.println(nome2.equalsIgnoreCase(nomeOutro));
         }    
 }
