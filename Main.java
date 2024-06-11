@@ -43,5 +43,10 @@ public class Main {
             } else {
                 System.out.println("aluno reprovado");
             }
+
+            String nome2 = "jesé";
+            System.out.println(nome2.toUpperCase());
+            System.out.println(nome2.toLowerCase());
+            System.out.println(nome2.length());
         }    
 }
