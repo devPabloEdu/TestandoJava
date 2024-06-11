@@ -76,6 +76,17 @@ public class Main {
             }
 
             System.out.printf("ola, %s. Hoje é %s, %s.%n", nome3, diaSemana, saudacao);
+            
+            // 1 2 3 4 5 6 7 8 9 10
+            // para uma variavel q inicia em 1 e vai ate dez, mudando um por um, faça:
+            for (int numeroFor = 1; numeroFor <= 10; numeroFor++)  {
+                System.out.println(numeroFor);
+            }
 
+            for (int i = 0; i <=10; i++){
+                for(int j = 1; j <=10; j++){
+                    System.out.println(j + " X " + i + " = " + j * i);
+                }
+            }
         }    
 }
