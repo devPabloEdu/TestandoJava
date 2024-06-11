@@ -6,6 +6,10 @@ import java.time.LocalDateTime;
 
 public class Main {
         public static void main(String[] args) {
+            //invocando funções no main
+            String nomeprafunc = "lets code";
+            saudacao(nomeprafunc);
+
             //write your code here
 
             String nome = "pablo";
@@ -88,5 +92,43 @@ public class Main {
                     System.out.println(j + " X " + i + " = " + j * i);
                 }
             }
-        }    
+
+            int[] numeros = new int[5];
+            //[indice 0] [indice 1] [indice 2] [indice 3] [indice 4] como se eu tivesse isso
+            numeros[0] = 1;
+            numeros[1] = 2;
+            numeros[2] = 3;
+            numeros[3] = 4;
+            numeros[4] = 5;
+            for (int i = 0; i < numeros.length; i++)
+            {
+                System.out.println(numeros[i]);
+            }
+
+
+            int[] numeros2 = {9, 10, 12, 25, 2};
+            int maior = numeros2[0];
+            int menor = numeros2[0];
+            int media = 0;
+
+            for (int i=0; i < numeros2.length; i++)
+            {
+                if (numeros2[i] > maior){
+                    maior = numeros2[i];
+                } if (numeros2[i] < menor) {
+                    menor = numeros2[i];
+                }
+                media +=  numeros[i];
+            }
+            System.out.println("maior " + maior);
+            System.out.println("menor " + menor);
+            System.out.println("media " + media/numeros2.length);
+            
+
+
+        }   
+        
+        public static void saudacao(String nomeprafunc) {
+            System.out.println("hello " + nomeprafunc);
+        }
 }
