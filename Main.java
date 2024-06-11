@@ -1,3 +1,7 @@
+import java.time.LocalDate;
+import java.time.format.TextStyle;
+import java.util.Locale;
+
 public class Main {
         public static void main(String[] args) {
             //write your code here
@@ -51,5 +55,10 @@ public class Main {
 
             String nomeOutro = "Jessé";
             System.out.println(nome2.equalsIgnoreCase(nomeOutro));
+
+            //iso 
+            LocalDate hoje = LocalDate.now();
+            Locale brasil = new Locale("pt", "BR");
+            System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
         }    
 }
